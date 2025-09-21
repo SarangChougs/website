@@ -1,0 +1,37 @@
+/* Simple, clean CV theme */
+:root{
+  --bg:#0b0c10;
+  --card:#111317;
+  --text:#e8eaed;
+  --muted:#aab2bd;
+  --brand:#7dd3fc;
+  --accent:#c084fc;
+  --border:#1f2430;
+}
+
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,'Helvetica Neue',Arial,'Apple Color Emoji','Segoe UI Emoji';background:var(--bg);color:var(--text);line-height:1.6}
+.container{max-width:980px;margin:0 auto;padding:24px}
+header{padding-top:40px;padding-bottom:12px;border-bottom:1px solid var(--border)}
+.name{font-size:2rem;margin:0}
+.tagline{margin:.25rem 0 1rem;color:var(--muted)}
+.meta{display:flex;flex-wrap:wrap;gap:.75rem;padding:0;margin:0 0 12px;list-style:none}
+.meta a{color:var(--brand);text-decoration:none;border-bottom:1px dotted transparent}
+.meta a:hover{border-color:var(--brand)}
+.nav{display:flex;flex-wrap:wrap;gap:.75rem;margin:8px 0 16px}
+.nav a{padding:.4rem .7rem;border:1px solid var(--border);border-radius:999px;color:var(--text);text-decoration:none}
+.nav a:hover{border-color:var(--brand)}
+.cta{display:flex;gap:.75rem;margin-top:6px;margin-bottom:24px}
+.button{display:inline-block;padding:.6rem 1rem;border-radius:10px;background:linear-gradient(135deg,var(--brand),var(--accent));color:#0b0c10;font-weight:700;text-decoration:none}
+.button.secondary{background:transparent;color:var(--text);border:1px solid var(--border)}
+h2{margin-top:32px;border-bottom:1px solid var(--border);padding-bottom:6px}
+h3{margin:.75rem 0 .25rem}
+.item{padding:12px 0;border-bottom:1px dashed var(--border)}
+.item:last-child{border-bottom:none}
+.item-head{display:flex;flex-direction:column;gap:.25rem}
+.place,.time{color:var(--muted);font-size:.95rem}
+.inline{display:flex;flex-wrap:wrap;gap:.5rem;list-style:none;padding-left:0}
+.inline li{background:var(--card);border:1px solid var(--border);padding:.25rem .5rem;border-radius:8px}
+.grid-2{display:grid;grid-template-columns:1fr;gap:12px}
+@media(min-width:800px){.grid-2{grid-template-columns:1fr 1fr}}
+.footer{border-top:1px solid var(--border);margin-top:24px;color:var(--muted)}
